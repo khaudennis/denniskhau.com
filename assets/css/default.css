@@ -1,0 +1,215 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+}
+
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white;
+}
+
+.scroll-to-top:hover {
+  background: #343a40;
+}
+
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+.welcome {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.project-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 530px;
+  margin: auto auto 1rem;
+}
+
+.project-item .caption {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.project-item .caption .caption-content {
+  color: #fff;
+  margin: auto 2rem 2rem;
+}
+
+.project-item .caption .caption-content h2 {
+  font-size: 1.50rem;
+  text-transform: uppercase;
+}
+
+.project-item .caption .caption-content p {
+  font-weight: 300;
+  font-size: 1.0rem;
+}
+
+@media only screen {
+  .welcome {
+    height: 95vh;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .welcome h1 {
+    font-size: 3.5rem;
+  }
+
+  .project-item .caption .caption-content h2 {
+    font-size: 1.0rem;
+    text-transform: uppercase;
+  }
+  
+  .project-item .caption .caption-content p {
+    font-weight: 150;
+    font-size: 0.75rem;
+  }
+} 
+
+@media (min-width: 992px) {
+  .welcome {
+    height: 100vh;
+  }
+  .welcome h1 {
+    font-size: 5.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .project-item {
+    max-width: none;
+    margin: 0;
+  }
+  .project-item .caption {
+    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, background-color 0.7s;
+    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(0px);
+    clip-path: inset(0px);
+  }
+  .project-item .caption .caption-content {
+    transition: opacity 0.25s;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+  }
+  .project-item img {
+    transition: -webkit-clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out;
+    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+    -webkit-clip-path: inset(-1px);
+    clip-path: inset(-1px);
+  }
+  .project-item:hover img {
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+  .project-item:hover .caption {
+    background-color: #000;
+    -webkit-clip-path: inset(2rem);
+    clip-path: inset(2rem);
+  }
+}
+
+footer.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+footer.footer .social-link {
+  display: block;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4.3rem;
+  font-size: 1.5rem;
+  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+  background-blend-mode: multiply;
+  transition: background-color 0.15s ease-in-out;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+footer.footer .social-link:hover {
+  background-color: #343a40;
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover, a:focus, a:active {
+  color: #000;
+  text-decoration: none;
+}
+
+.btn {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-dark {
+  color: #fff !important;
+}
+
+.btn-xl {
+  padding: 1.25rem 2.5rem !important;
+}
