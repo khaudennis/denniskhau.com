@@ -192,12 +192,12 @@ footer.footer .social-link:hover {
 
 a {
   color: #000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover, a:focus, a:active {
   color: #000;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .btn {
